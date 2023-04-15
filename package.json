@@ -1,0 +1,20 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "Collection of interfaces used by WeMineX.",
+  "main": "dist/interfaces.js",
+  "types": "dist/interfaces.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/We-Mine-X-Inc/APIs.git"
+  },
+  "author": "amadu@weminetogether.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/We-Mine-X-Inc/APIs/issues"
+  },
+  "homepage": "https://github.com/We-Mine-X-Inc/APIs#readme"
+}
