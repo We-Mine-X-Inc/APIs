@@ -1,4 +1,4 @@
-import { CoinType } from "../coin-market-info.interface";
+import { CoinType } from "@market-insights/coin-market-info.interface";
 
 export type Revenue = {
   amount: number;

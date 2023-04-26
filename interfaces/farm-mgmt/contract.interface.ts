@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
-import { CoinMarketInfo } from "./coin-market-info.interface";
+import { CoinMarketInfo } from "@market-insights/coin-market-info.interface";
 import { Customer } from "./customer.interface";
-import { MinerMarketInfo } from "./miner-market-info.interface";
+import { MinerMarketInfo } from "@market-insights/miner-market-info.interface";
 import { Miner } from "./miner.interface";
 import { Pool } from "./pool.interface";
 

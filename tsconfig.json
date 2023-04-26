@@ -12,7 +12,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
     "strict": true,
-    "outDir": "dist",
+    "outDir": "./lib",
     "baseUrl": "./",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -35,9 +35,12 @@
     "esModuleInterop": true,
     "paths": {
       "@/*": ["*"],
-      "@interfaces/*": ["interfaces/*"]
+      "@interfaces/*": ["interfaces/*"],
+      "@account-mgmt/*": ["interfaces/account-mgmt/*"],
+      "@farm-mgmt/*": ["interfaces/farm-mgmt/*"],
+      "@market-insights/*": ["interfaces/market-insights/*"]
     }
   },
-  "include": ["interfaces/**/*.ts"],
+  "include": ["interfaces.ts", "interfaces/**/*.ts"],
   "exclude": ["node_modules"]
 }

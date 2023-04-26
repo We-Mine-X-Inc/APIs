@@ -1,7 +1,6 @@
 import { Types } from "mongoose";
 import { HashRate } from "./performance/hash-rate.interface";
 import { TimeRange } from "./performance/time.interface";
-import { Pool } from "./pool.interface";
 
 export type WorkerMap = { [key: string]: HashRate };
 

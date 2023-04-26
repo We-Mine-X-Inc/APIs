@@ -2,19 +2,31 @@
   "name": "apis",
   "version": "1.0.0",
   "description": "Collection of interfaces used by WeMineX.",
-  "main": "dist/interfaces.js",
-  "types": "dist/interfaces.d.ts",
+  "main": "lib/interfaces.js",
+  "types": "lib/interfaces.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && tsc-alias",
+    "test": "echo \"No test required for this library.\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/We-Mine-X-Inc/APIs.git"
   },
-  "author": "amadu@weminetogether.com",
+  "author": "We Mine X Inc.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/We-Mine-X-Inc/APIs/issues"
   },
-  "homepage": "https://github.com/We-Mine-X-Inc/APIs#readme"
+  "homepage": "https://github.com/We-Mine-X-Inc/APIs#readme",
+  "devDependencies": {
+    "tsc-alias": "^1.8.5",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mongoose": "^7.0.5"
+  }
 }

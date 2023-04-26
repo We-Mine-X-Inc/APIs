@@ -1,4 +1,3 @@
-import { Types } from "mongoose";
 import { InventoryItem } from "../inventory-item.interface";
 
 export function assertInventoryItem(
