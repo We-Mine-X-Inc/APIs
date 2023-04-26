@@ -1,0 +1,1 @@
+{"version":3,"file":"time.interface.d.ts","sourceRoot":"","sources":["../../../../interfaces/farm-mgmt/performance/time.interface.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,SAAS,GAAG;IACtB,aAAa,EAAE,MAAM,CAAC;IACtB,WAAW,EAAE,MAAM,CAAC;CACrB,CAAC;AAEF,MAAM,MAAM,aAAa,GAAG;IAC1B,YAAY,EAAE,MAAM,CAAC;CACtB,CAAC"}
