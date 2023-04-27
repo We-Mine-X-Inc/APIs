@@ -1,3 +1,4 @@
+export * from "./assertions";
 export * from "./contract.interface";
 export * from "./customer.interface";
 export * from "./facility-info.interface";
