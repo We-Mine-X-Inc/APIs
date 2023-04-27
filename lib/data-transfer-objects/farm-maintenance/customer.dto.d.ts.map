@@ -1,0 +1,1 @@
+{"version":3,"file":"customer.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-maintenance/customer.dto.ts"],"names":[],"mappings":"AAQA,qBAAa,iBAAiB;IAGrB,KAAK,CAAC,EAAE,MAAM,CAAC;IAIf,SAAS,CAAC,EAAE,MAAM,CAAC;IAInB,QAAQ,CAAC,EAAE,MAAM,CAAC;IAIlB,WAAW,CAAC,EAAE,MAAM,CAAC;IAIrB,OAAO,CAAC,EAAE,MAAM,CAAC;IAIjB,iBAAiB,CAAC,EAAE,OAAO,CAAC;CACpC"}

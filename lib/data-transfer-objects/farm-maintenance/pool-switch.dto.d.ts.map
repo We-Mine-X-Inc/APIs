@@ -1,0 +1,1 @@
+{"version":3,"file":"pool-switch.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-maintenance/pool-switch.dto.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,KAAK,EAAE,MAAM,UAAU,CAAC;AAEjC,qBAAa,kBAAkB;IAGtB,UAAU,CAAC,EAAE,KAAK,CAAC,QAAQ,CAAC;IAI5B,iBAAiB,CAAC,EAAE,MAAM,CAAC;CACnC"}

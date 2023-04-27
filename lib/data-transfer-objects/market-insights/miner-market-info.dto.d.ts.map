@@ -1,0 +1,1 @@
+{"version":3,"file":"miner-market-info.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/market-insights/miner-market-info.dto.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,wDAAwD,CAAC;AAClF,OAAO,EAAE,aAAa,EAAE,MAAM,uDAAuD,CAAC;AAGtF,qBAAa,wBAAwB;IAG5B,QAAQ,CAAC,EAAE,QAAQ,CAAC;IAIpB,kBAAkB,CAAC,EAAE,aAAa,CAAC;IAInC,gBAAgB,CAAC,EAAE,MAAM,CAAC;CAClC"}

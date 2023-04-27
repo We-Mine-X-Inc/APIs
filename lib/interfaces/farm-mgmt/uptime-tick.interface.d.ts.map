@@ -1,1 +1,0 @@
-{"version":3,"file":"uptime-tick.interface.d.ts","sourceRoot":"","sources":["../../../interfaces/farm-mgmt/uptime-tick.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,UAAU,CAAC;AAEjC,MAAM,WAAW,UAAU;IACzB,GAAG,EAAE,KAAK,CAAC,QAAQ,CAAC;IACpB,QAAQ,EAAE,IAAI,CAAC;CAChB"}

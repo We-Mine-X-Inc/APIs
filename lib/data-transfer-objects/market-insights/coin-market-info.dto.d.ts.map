@@ -1,0 +1,1 @@
+{"version":3,"file":"coin-market-info.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/market-insights/coin-market-info.dto.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,wDAAwD,CAAC;AAGlF,qBAAa,uBAAuB;IAG3B,QAAQ,CAAC,EAAE,QAAQ,CAAC;IAIpB,SAAS,CAAC,EAAE,MAAM,CAAC;CAC3B"}

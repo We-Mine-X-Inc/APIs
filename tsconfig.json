@@ -11,7 +11,7 @@
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
-    "strict": true,
+    "strict": true, //
     "outDir": "./lib",
     "baseUrl": "./",
     "module": "commonjs",
@@ -35,12 +35,30 @@
     "esModuleInterop": true,
     "paths": {
       "@/*": ["*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@account-mgmt/*": ["interfaces/account-mgmt/*"],
-      "@farm-mgmt/*": ["interfaces/farm-mgmt/*"],
-      "@market-insights/*": ["interfaces/market-insights/*"]
+      "@business-logic-interfaces/*": ["business-logic-interfaces/*"],
+      "@account-mgmt-interfaces/*": [
+        "business-logic-interfaces/account-mgmt/*"
+      ],
+      "@farm-maintenance-interfaces/*": [
+        "business-logic-interfaces/farm-maintenance/*"
+      ],
+      "@farm-metrics-interfaces/*": [
+        "business-logic-interfaces/farm-metrics/*"
+      ],
+      "@market-insights-interfaces/*": [
+        "business-logic-interfaces/market-insights/*"
+      ],
+      "@data-transfer-objects/*": ["data-transfer-objects/*"],
+      "@account-mgmt-dtos/*": ["data-transfer-objects/account-mgmt/*"],
+      "@farm-maintenance-dtos/*": ["data-transfer-objects/farm-maintenance/*"],
+      "@farm-metrics-dtos/*": ["data-transfer-objects/farm-metrics/*"],
+      "@market-insights-dtos/*": ["data-transfer-objects/market-insights/*"]
     }
   },
-  "include": ["interfaces.ts", "interfaces/**/*.ts"],
+  "include": [
+    "interfaces.ts",
+    "business-logic-interfaces/**/*.ts",
+    "data-transfer-objects/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
