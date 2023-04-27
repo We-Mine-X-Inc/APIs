@@ -8,3 +8,4 @@ export * from "./pool-revenue.interface";
 export * from "./pool-worker-hash-rate-contribution.interface";
 export * from "./pool.interface";
 export * from "./supplier-quote.interface";
+export * from "./uptime-tick.interface";
