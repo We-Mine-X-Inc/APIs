@@ -21,9 +21,8 @@ export class AddPoolRevenueDto {
 }
 
 export class ListPoolRevenueRequestDto {
-  @IsOptional()
   @IsArray()
-  public poolUsernames?: string[];
+  public poolUsernames: string[] = [];
 
   @IsOptional()
   @IsObject()
@@ -35,7 +34,6 @@ export class ListPoolRevenueRequestDto {
 }
 
 export class ListPoolRevenueResponseDto {
-  @IsOptional()
   @IsArray()
-  public poolRevenues?: PoolRevenue[];
+  public poolRevenues: PoolRevenue[] = [];
 }

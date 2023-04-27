@@ -12,7 +12,7 @@ export declare class MinerPerformanceResponseDto {
     timeRange?: TimeRange;
     profits?: Revenue;
     averageHashRate?: HashRate;
-    contributionRatios?: Array<CalculatedWorkerContribution>;
+    contributionRatios: CalculatedWorkerContribution[];
 }
 export type CalculatedWorkerContribution = {
     poolUsername?: string;

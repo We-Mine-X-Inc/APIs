@@ -7,11 +7,11 @@ export declare class AddPoolRevenueDto {
     cummulativeProfits?: Revenue;
 }
 export declare class ListPoolRevenueRequestDto {
-    poolUsernames?: string[];
+    poolUsernames: string[];
     timeRange?: TimeRange;
     timeSingleton?: TimeSingleton;
 }
 export declare class ListPoolRevenueResponseDto {
-    poolRevenues?: PoolRevenue[];
+    poolRevenues: PoolRevenue[];
 }
 //# sourceMappingURL=pool-revenue.dto.d.ts.map

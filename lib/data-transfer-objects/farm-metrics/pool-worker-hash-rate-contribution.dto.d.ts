@@ -7,10 +7,10 @@ export declare class AddPoolWorkerHashRateContributionDto {
     companyWorkers?: WorkerMap;
 }
 export declare class ListPoolWorkerHashRateContributionRequestDto {
-    poolUsernames?: string[];
+    poolUsernames: string[];
     timeRange?: TimeRange;
 }
 export declare class ListPoolWorkerHashRateContributionResponseDto {
-    poolWorkerContributions?: PoolWorkerHashRateContribution[];
+    poolWorkerContributions: PoolWorkerHashRateContribution[];
 }
 //# sourceMappingURL=pool-worker-hash-rate-contribution.dto.d.ts.map

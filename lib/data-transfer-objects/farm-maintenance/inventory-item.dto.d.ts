@@ -4,7 +4,7 @@ export declare class CreateInventoryItemDto {
     type?: InventoryItemType;
     status?: InventoryItemStatus;
     model?: string;
-    operationalDependencies?: Types.ObjectId[];
+    operationalDependencies: Types.ObjectId[];
     operationalMetadata?: OperationalMetadata;
 }
 //# sourceMappingURL=inventory-item.dto.d.ts.map

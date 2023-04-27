@@ -25,9 +25,8 @@ export class CreateInventoryItemDto {
   @IsString()
   public model?: string;
 
-  @IsOptional()
   @IsArray()
-  public operationalDependencies?: Types.ObjectId[];
+  public operationalDependencies: Types.ObjectId[] = [];
 
   @IsOptional()
   @IsObject()

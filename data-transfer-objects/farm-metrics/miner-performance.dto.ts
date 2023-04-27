@@ -32,9 +32,8 @@ export class MinerPerformanceResponseDto {
   @IsNumber()
   public averageHashRate?: HashRate;
 
-  @IsOptional()
   @IsArray()
-  public contributionRatios?: Array<CalculatedWorkerContribution>;
+  public contributionRatios: CalculatedWorkerContribution[] = [];
 }
 
 export type CalculatedWorkerContribution = {

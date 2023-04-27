@@ -24,9 +24,8 @@ export class AddPoolWorkerHashRateContributionDto {
 }
 
 export class ListPoolWorkerHashRateContributionRequestDto {
-  @IsOptional()
   @IsArray()
-  public poolUsernames?: string[];
+  public poolUsernames: string[] = [];
 
   @IsOptional()
   @IsObject()
@@ -34,7 +33,6 @@ export class ListPoolWorkerHashRateContributionRequestDto {
 }
 
 export class ListPoolWorkerHashRateContributionResponseDto {
-  @IsOptional()
   @IsArray()
-  public poolWorkerContributions?: PoolWorkerHashRateContribution[];
+  public poolWorkerContributions: PoolWorkerHashRateContribution[] = [];
 }
