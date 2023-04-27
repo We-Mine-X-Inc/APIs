@@ -6,4 +6,5 @@ export * from "./data-transfer-objects/account-mgmt";
 export * from "./data-transfer-objects/farm-maintenance";
 export * from "./data-transfer-objects/farm-metrics";
 export * from "./data-transfer-objects/market-insights";
+export * from "./exceptions";
 //# sourceMappingURL=interfaces.d.ts.map
