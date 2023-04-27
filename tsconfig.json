@@ -58,7 +58,8 @@
   "include": [
     "interfaces.ts",
     "business-logic-interfaces/**/*.ts",
-    "data-transfer-objects/**/*.ts"
+    "data-transfer-objects/**/*.ts",
+    "exceptions/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
