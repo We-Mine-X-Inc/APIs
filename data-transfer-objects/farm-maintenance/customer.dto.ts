@@ -1,10 +1,4 @@
-import {
-  IsBoolean,
-  IsEmail,
-  IsOptional,
-  IsPhoneNumber,
-  IsString,
-} from "class-validator";
+import { IsBoolean, IsEmail, IsPhoneNumber, IsString } from "class-validator";
 
 export class CreateCustomerRequestDto {
   @IsEmail()

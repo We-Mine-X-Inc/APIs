@@ -1,1 +1,1 @@
-{"version":3,"file":"uptime-tick.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-maintenance/uptime-tick.dto.ts"],"names":[],"mappings":"AAEA,qBAAa,mBAAmB;IAGvB,QAAQ,CAAC,EAAE,IAAI,CAAC;CACxB"}
+{"version":3,"file":"uptime-tick.dto.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-maintenance/uptime-tick.dto.ts"],"names":[],"mappings":"AAEA,qBAAa,0BAA0B;IAE9B,QAAQ,EAAE,IAAI,CAAwB;CAC9C;AAED,MAAM,WAAW,uBAAuB;IACtC,QAAQ,EAAE,IAAI,CAAC;CAChB"}

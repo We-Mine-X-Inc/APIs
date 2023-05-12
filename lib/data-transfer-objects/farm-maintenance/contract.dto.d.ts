@@ -2,18 +2,30 @@ import { HostingContract, PoolActivity, ResaleContract } from "../../business-lo
 import { Customer } from "../../business-logic-interfaces/farm-maintenance/customer.interface";
 import { Miner } from "../../business-logic-interfaces/farm-maintenance/miner.interface";
 import { Types } from "mongoose";
-export declare class MutableContractFields {
+export declare class CreateContractRequestDto {
+    miner?: Miner;
     customer?: Customer;
     hostingContract?: HostingContract;
     resaleContract?: ResaleContract;
     poolActivity?: PoolActivity;
 }
-export declare class CreateContractDto {
-    miner?: Miner;
-    initialFields?: MutableContractFields;
+export interface CreateContractRequest {
+    miner: Miner;
+    customer: Customer;
+    hostingContract?: HostingContract;
+    resaleContract?: ResaleContract;
+    poolActivity?: PoolActivity;
 }
-export declare class UpdateContractDto {
+export declare class UpdateContractRequestDto {
     contractId?: Types.ObjectId;
-    mutatedFields?: MutableContractFields;
+    hostingContract?: HostingContract;
+    resaleContract?: ResaleContract;
+    poolActivity?: PoolActivity;
+}
+export interface UpdateContractRequest {
+    contractId: Types.ObjectId;
+    hostingContract?: HostingContract;
+    resaleContract?: ResaleContract;
+    poolActivity?: PoolActivity;
 }
 //# sourceMappingURL=contract.dto.d.ts.map

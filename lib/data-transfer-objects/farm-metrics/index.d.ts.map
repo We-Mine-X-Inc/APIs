@@ -1,1 +1,1 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-metrics/index.ts"],"names":[],"mappings":"AAAA,cAAc,yBAAyB,CAAC;AACxC,cAAc,oBAAoB,CAAC;AACnC,cAAc,0CAA0C,CAAC"}
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../data-transfer-objects/farm-metrics/index.ts"],"names":[],"mappings":"AAAA,cAAc,yBAAyB,CAAC;AACxC,cAAc,8BAA8B,CAAC;AAC7C,cAAc,+BAA+B,CAAC"}

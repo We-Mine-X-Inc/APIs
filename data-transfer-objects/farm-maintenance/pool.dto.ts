@@ -3,7 +3,7 @@ import {
   PoolPurposeType,
   PoolType,
 } from "@farm-maintenance-interfaces/pool.interface";
-import { IsEnum, IsObject, IsOptional, IsString } from "class-validator";
+import { IsEnum, IsObject, IsString } from "class-validator";
 
 export class CreatePoolRequestDto {
   @IsObject()
