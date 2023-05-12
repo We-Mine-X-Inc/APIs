@@ -1,12 +1,12 @@
 import { Miner } from "@farm-maintenance-interfaces/miner.interface";
 import { HashRate } from "./performance/hash-rate.interface";
-import { Revenue } from "./performance/revenue.interface";
+import { EconomicValue } from "./performance/revenue.interface";
 import { TimeRange } from "./performance/time.interface";
 
 export type MinerPerformance = {
   miner: Miner;
   timeRange: TimeRange;
-  profits: Revenue;
+  profits: EconomicValue;
   averageHashRate: HashRate;
 };
 

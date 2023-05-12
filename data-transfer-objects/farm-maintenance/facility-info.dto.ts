@@ -1,23 +1,18 @@
 import { IsNumber, IsOptional, IsString } from "class-validator";
 
-export class CreateFacilityInfoDto {
-  @IsOptional()
+export class CreateFacilityInfoRequestDto {
   @IsString()
   public name?: string;
 
-  @IsOptional()
   @IsString()
   public address?: string;
 
-  @IsOptional()
   @IsNumber()
   public estPowerUsageInKiloWatts?: number;
 
-  @IsOptional()
   @IsNumber()
   public estPowerCapacityInKiloWatts?: number;
 
-  @IsOptional()
   @IsNumber()
   public estPowerCostInMicros?: number;
 
@@ -25,7 +20,16 @@ export class CreateFacilityInfoDto {
   @IsNumber()
   public farenheitTemp?: number;
 
-  @IsOptional()
   @IsString()
   public isAutoManaged?: string;
+}
+
+export interface CreateFacilityInfoReqeust {
+  name: string;
+  address: string;
+  estPowerUsageInKiloWatts: number;
+  estPowerCapacityInKiloWatts: number;
+  estPowerCostInMicros: number;
+  farenheitTemp?: number;
+  isAutoManaged: string;
 }

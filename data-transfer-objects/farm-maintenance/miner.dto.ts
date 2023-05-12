@@ -14,48 +14,61 @@ import {
 } from "class-validator";
 import { Types } from "mongoose";
 
-export class MutableMinerFields {
-  @IsOptional()
+export class CreateMinerRequestDto {
   @IsObject()
   public owner?: Customer;
 
-  @IsOptional()
   @IsObject()
   public inventoryItem?: InventoryItem;
 
-  @IsOptional()
   @IsMACAddress()
   public macAddress?: string;
 
-  @IsOptional()
   @IsIP()
   public ipAddress?: string;
 
-  @IsOptional()
   @IsEnum(MinerApiType)
   public API?: MinerApiType;
 
-  @IsOptional()
   @IsObject()
   public status?: MinerStatus;
 
-  @IsOptional()
   @IsObject()
   public rackLocation?: RackLocation;
 }
 
-export class CreateMinerDto {
-  @IsOptional()
-  @IsObject()
-  public initialFields?: MutableMinerFields;
+export interface CreateMinerRequest {
+  owner: Customer;
+  inventoryItem: InventoryItem;
+  macAddress: string;
+  ipAddress: string;
+  API: MinerApiType;
+  status: MinerStatus;
+  rackLocation: RackLocation;
 }
 
-export class UpdateMinerDto {
+export class UpdateMinerRequestDto {
   @IsOptional()
   @IsObject()
   public minerId?: Types.ObjectId;
 
-  @IsOptional()
+  @IsIP()
+  public ipAddress?: string;
+
+  @IsEnum(MinerApiType)
+  public API?: MinerApiType;
+
   @IsObject()
-  public mutatedFields?: MutableMinerFields;
+  public status?: MinerStatus;
+
+  @IsObject()
+  public rackLocation?: RackLocation;
+}
+
+export interface UpdateMinerRequest {
+  minerId: Types.ObjectId;
+  ipAddress: string;
+  API: MinerApiType;
+  status: MinerStatus;
+  rackLocation: RackLocation;
 }

@@ -7,16 +7,16 @@ import {
   IsString,
 } from "class-validator";
 
-export class CreateMgmtAccountDto {
-  @IsOptional()
+/**
+ * Mgmt Account DTO used for data validation of request objects.
+ */
+export class CreateMgmtAccountReqeustDto {
   @IsEmail()
   public email?: string;
 
-  @IsOptional()
   @IsString()
   public firstName?: string;
 
-  @IsOptional()
   @IsString()
   public lastName?: string;
 
@@ -28,7 +28,15 @@ export class CreateMgmtAccountDto {
   @IsString()
   public address?: string;
 
-  @IsOptional()
   @IsObject()
   public mgmtPermissions?: MgmtPermissions;
+}
+
+export interface CreateMgmtAccount {
+  email: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber?: string;
+  address?: string;
+  mgmtPermissions: MgmtPermissions;
 }

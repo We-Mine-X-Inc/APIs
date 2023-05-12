@@ -1,7 +1,10 @@
-import { IsDate, IsOptional } from "class-validator";
+import { IsDate } from "class-validator";
 
-export class CreateUptimeTickDto {
-  @IsOptional()
+export class CreateUptimeTickRequestDto {
   @IsDate()
-  public datetime?: Date;
+  public datetime: Date = new Date(Date.now());
+}
+
+export interface CreateUptimeTickRequest {
+  datetime: Date;
 }

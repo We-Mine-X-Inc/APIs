@@ -12,16 +12,13 @@ import {
 } from "class-validator";
 import { Types } from "mongoose";
 
-export class CreateInventoryItemDto {
-  @IsOptional()
+export class CreateInventoryItemRequestDto {
   @IsEnum(InventoryItemType)
   public type?: InventoryItemType;
 
-  @IsOptional()
   @IsEnum(InventoryItemStatus)
   public status?: InventoryItemStatus;
 
-  @IsOptional()
   @IsString()
   public model?: string;
 
@@ -31,4 +28,12 @@ export class CreateInventoryItemDto {
   @IsOptional()
   @IsObject()
   public operationalMetadata?: OperationalMetadata;
+}
+
+export interface CreateInventoryItemReqeust {
+  type: InventoryItemType;
+  status: InventoryItemStatus;
+  model: string;
+  operationalDependencies: Types.ObjectId[];
+  operationalMetadata?: OperationalMetadata;
 }

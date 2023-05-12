@@ -1,28 +1,32 @@
 import { SupplierQuote } from "@farm-maintenance-interfaces/supplier-quote.interface";
 import { IsNumber, IsObject, IsOptional, IsString } from "class-validator";
 
-export class CreateSupplierQuoteDto {
-  @IsOptional()
+export class CreateSupplierQuoteRequestDto {
   @IsObject()
   public supplier?: SupplierQuote;
 
-  @IsOptional()
   @IsString()
   public itemModel?: string;
 
-  @IsOptional()
   @IsNumber()
   public unitPrice?: number;
 
-  @IsOptional()
   @IsNumber()
   public quantity?: number;
 
-  @IsOptional()
   @IsNumber()
   public sourceDateInMillis?: number;
 
   @IsOptional()
   @IsNumber()
   public expirationDateInMillis?: number;
+}
+
+export interface CreateSupplierQuoteRequest {
+  supplier: SupplierQuote;
+  itemModel: string;
+  unitPrice: number;
+  quantity: number;
+  sourceDateInMillis: number;
+  expirationDateInMillis?: number;
 }

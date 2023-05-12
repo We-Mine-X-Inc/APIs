@@ -1,7 +1,7 @@
 import {
   PoolWorkerHashRateContribution,
   WorkerMap,
-} from "@farm-metrics-interfaces/pool-worker-hash-rate-contribution.interface";
+} from "@/business-logic-interfaces/farm-metrics/mining-worker-hash-rate.interface";
 import { TimeRange } from "@farm-metrics-interfaces/performance/time.interface";
 import { IsArray, IsObject, IsOptional, IsString } from "class-validator";
 
