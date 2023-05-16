@@ -1,17 +1,20 @@
 import { CoinType } from "@market-insights-interfaces/coin-market-info.interface";
 import { InventoryItem } from "@farm-maintenance-interfaces/inventory-item.interface";
-import { IsEnum, IsNumber, IsObject, IsOptional } from "class-validator";
+import { IsEnum, IsNumber, IsObject } from "class-validator";
 
-export class CreateMinerMarketInfoDto {
-  @IsOptional()
+export class CreateMinerMarketInfoRequestDto {
   @IsEnum(CoinType)
   public coinType?: CoinType;
 
-  @IsOptional()
   @IsObject()
   public minerInventoryItem?: InventoryItem;
 
-  @IsOptional()
   @IsNumber()
   public dailyCoinEarning?: number;
+}
+
+export interface CreateMinerMarketInfoRequest {
+  coinType: CoinType;
+  minerInventoryItem: InventoryItem;
+  dailyCoinEarning: number;
 }

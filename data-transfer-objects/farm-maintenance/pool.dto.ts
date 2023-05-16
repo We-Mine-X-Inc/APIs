@@ -3,7 +3,8 @@ import {
   PoolPurposeType,
   PoolType,
 } from "@farm-maintenance-interfaces/pool.interface";
-import { IsEnum, IsObject, IsString } from "class-validator";
+import { IsEnum, IsObject, IsOptional, IsString } from "class-validator";
+import { Types } from "mongoose";
 
 export class CreatePoolRequestDto {
   @IsObject()
@@ -32,4 +33,37 @@ export interface CreatePoolRequest {
   username: string;
   poolType: PoolType;
   purpose: PoolPurposeType;
+}
+
+export class GetPoolRequestDto {
+  @IsObject()
+  public id?: Types.ObjectId;
+}
+
+export interface GetPoolRequest {
+  id: Types.ObjectId;
+}
+
+export class ListPoolRequestDto {
+  @IsObject()
+  public creator?: Customer;
+
+  @IsOptional()
+  @IsString()
+  public username?: string;
+
+  @IsOptional()
+  @IsEnum(PoolType)
+  public poolType?: PoolType;
+
+  @IsOptional()
+  @IsEnum(PoolPurposeType)
+  public purpose?: PoolPurposeType;
+}
+
+export interface ListPoolRequest {
+  creator?: Customer;
+  username?: string;
+  poolType?: PoolType;
+  purpose?: PoolPurposeType;
 }
