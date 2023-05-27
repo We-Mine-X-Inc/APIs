@@ -5,6 +5,6 @@ import { TimeRange } from "./performance/time.interface";
 export type MiningAccountRevenue = {
   _id: Types.ObjectId;
   timeRange: TimeRange;
-  miningAccountUsername: string;
+  accountAddress: string;
   cummulativeProfits: EconomicValue;
 };

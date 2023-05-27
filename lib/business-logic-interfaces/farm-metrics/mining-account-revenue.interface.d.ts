@@ -4,7 +4,7 @@ import { TimeRange } from "./performance/time.interface";
 export type MiningAccountRevenue = {
     _id: Types.ObjectId;
     timeRange: TimeRange;
-    miningAccountUsername: string;
+    accountAddress: string;
     cummulativeProfits: EconomicValue;
 };
 //# sourceMappingURL=mining-account-revenue.interface.d.ts.map
