@@ -10,7 +10,7 @@ export declare class CreateMgmtAccountReqeustDto {
     address?: string;
     mgmtPermissions?: MgmtPermissions;
 }
-export interface CreateMgmtAccount {
+export interface CreateMgmtAccountRequest {
     email: string;
     firstName: string;
     lastName: string;

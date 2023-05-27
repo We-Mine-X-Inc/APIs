@@ -8,14 +8,14 @@ export type WorkerContribution = {
     clientWorkers: WorkerMap;
     companyWorkers: WorkerMap;
 };
-export type PoolWorkerHashRateContributionModel = {
+export type WorkerHashRateContributionModel = {
     _id: Types.ObjectId;
     timeRange: TimeRange;
     poolUsername: string;
     clientWorkers: string;
     companyWorkers: string;
 };
-export type PoolWorkerHashRateContribution = {
+export type WorkerHashRateContribution = {
     _id: Types.ObjectId;
     timeRange: TimeRange;
     poolUsername: string;

@@ -8,7 +8,7 @@ import { IsArray, IsObject } from "class-validator";
 
 export class AddMiningAccountRevenueRequestDto {
   @IsObject()
-  public poolUsername?: string;
+  public accountAddress?: string;
 
   @IsObject()
   public timeRange?: TimeRange;
@@ -18,14 +18,14 @@ export class AddMiningAccountRevenueRequestDto {
 }
 
 export interface AddMiningAccountRevenueRequest {
-  poolUsername: string;
+  accountAddress: string;
   timeRange: TimeRange;
   cummulativeProfits: EconomicValue;
 }
 
 export class ListMiningAccountRevenueRequestDto {
   @IsArray()
-  public accountUsernames: string[] = [];
+  public accountAddresses: string[] = [];
 
   @IsObject()
   public timeRange?: TimeRange;
@@ -35,16 +35,16 @@ export class ListMiningAccountRevenueRequestDto {
 }
 
 export interface ListMiningAccountRevenueRequest {
-  accountUsernames: string[];
+  accountAddresses: string[];
   timeRange: TimeRange;
   timeSingleton: TimeSingleton;
 }
 
-export class ListMinerAccountRevenueResponseDto {
+export class ListMiningAccountRevenueResponseDto {
   @IsArray()
   public accountRevenues: MiningAccountRevenue[] = [];
 }
 
-export interface ListMinerAccountRevenueResponse {
+export interface ListMiningAccountRevenueResponse {
   accountRevenues: MiningAccountRevenue[];
 }

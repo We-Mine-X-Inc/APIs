@@ -32,7 +32,7 @@ export class CreateMgmtAccountReqeustDto {
   public mgmtPermissions?: MgmtPermissions;
 }
 
-export interface CreateMgmtAccount {
+export interface CreateMgmtAccountRequest {
   email: string;
   firstName: string;
   lastName: string;

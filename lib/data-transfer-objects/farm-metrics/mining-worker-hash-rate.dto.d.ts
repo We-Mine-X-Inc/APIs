@@ -1,16 +1,29 @@
-import { PoolWorkerHashRateContribution, WorkerMap } from "../../business-logic-interfaces/farm-metrics/mining-worker-hash-rate.interface";
+import { WorkerHashRateContribution, WorkerMap } from "../../business-logic-interfaces/farm-metrics/mining-worker-hash-rate.interface";
 import { TimeRange } from "../../business-logic-interfaces/farm-metrics/performance/time.interface";
-export declare class AddPoolWorkerHashRateContributionDto {
-    poolUsername?: string;
+export declare class AddPoolWorkerHashRateContributionRequestDto {
+    accountAddress?: string;
     timeRange?: TimeRange;
     clientWorkers?: WorkerMap;
     companyWorkers?: WorkerMap;
 }
+export interface AddPoolWorkerHashRateContributionRequest {
+    accountAddress: string;
+    timeRange: TimeRange;
+    clientWorkers?: WorkerMap;
+    companyWorkers?: WorkerMap;
+}
 export declare class ListPoolWorkerHashRateContributionRequestDto {
-    poolUsernames: string[];
+    accountAddresses: string[];
     timeRange?: TimeRange;
 }
+export interface ListPoolWorkerHashRateContributionRequest {
+    accountAddresses: string[];
+    timeRange: TimeRange;
+}
 export declare class ListPoolWorkerHashRateContributionResponseDto {
-    poolWorkerContributions: PoolWorkerHashRateContribution[];
+    workerContributions: WorkerHashRateContribution[];
+}
+export interface ListPoolWorkerHashRateContributionResponse {
+    workerContributions: WorkerHashRateContribution[];
 }
 //# sourceMappingURL=mining-worker-hash-rate.dto.d.ts.map

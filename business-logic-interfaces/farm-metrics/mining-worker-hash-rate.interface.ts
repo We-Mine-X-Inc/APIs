@@ -9,7 +9,7 @@ export type WorkerContribution = {
   companyWorkers: WorkerMap;
 };
 
-export type PoolWorkerHashRateContributionModel = {
+export type WorkerHashRateContributionModel = {
   _id: Types.ObjectId;
   timeRange: TimeRange;
   poolUsername: string;
@@ -17,7 +17,7 @@ export type PoolWorkerHashRateContributionModel = {
   companyWorkers: string;
 };
 
-export type PoolWorkerHashRateContribution = {
+export type WorkerHashRateContribution = {
   _id: Types.ObjectId;
   timeRange: TimeRange;
   poolUsername: string;
