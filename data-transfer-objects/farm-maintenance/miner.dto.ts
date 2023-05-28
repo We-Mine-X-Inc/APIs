@@ -48,7 +48,6 @@ export interface CreateMinerRequest {
 }
 
 export class UpdateMinerRequestDto {
-  @IsOptional()
   @IsObject()
   public minerId?: Types.ObjectId;
 
