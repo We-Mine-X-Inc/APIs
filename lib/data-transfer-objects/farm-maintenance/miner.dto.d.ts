@@ -29,9 +29,9 @@ export declare class UpdateMinerRequestDto {
 }
 export interface UpdateMinerRequest {
     minerId: Types.ObjectId;
-    ipAddress: string;
-    API: MinerApiType;
-    status: MinerStatus;
-    rackLocation: RackLocation;
+    ipAddress?: string;
+    API?: MinerApiType;
+    status?: MinerStatus;
+    rackLocation?: RackLocation;
 }
 //# sourceMappingURL=miner.dto.d.ts.map

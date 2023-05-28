@@ -52,23 +52,27 @@ export class UpdateMinerRequestDto {
   @IsObject()
   public minerId?: Types.ObjectId;
 
+  @IsOptional()
   @IsIP()
   public ipAddress?: string;
 
+  @IsOptional()
   @IsEnum(MinerApiType)
   public API?: MinerApiType;
 
+  @IsOptional()
   @IsObject()
   public status?: MinerStatus;
 
+  @IsOptional()
   @IsObject()
   public rackLocation?: RackLocation;
 }
 
 export interface UpdateMinerRequest {
   minerId: Types.ObjectId;
-  ipAddress: string;
-  API: MinerApiType;
-  status: MinerStatus;
-  rackLocation: RackLocation;
+  ipAddress?: string;
+  API?: MinerApiType;
+  status?: MinerStatus;
+  rackLocation?: RackLocation;
 }
