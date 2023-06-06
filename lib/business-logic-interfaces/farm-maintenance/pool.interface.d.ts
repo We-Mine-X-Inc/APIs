@@ -10,7 +10,8 @@ export declare enum PoolPurposeType {
 export declare enum PoolType {
     UNKNOWN = 0,
     SLUSH_POOL = 1,
-    POOL_MARS = 2
+    POOL_MARS = 2,
+    DX_POOL = 3
 }
 export interface Pool {
     _id: Types.ObjectId;

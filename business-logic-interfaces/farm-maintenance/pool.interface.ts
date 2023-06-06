@@ -13,6 +13,7 @@ export enum PoolType {
   UNKNOWN = 0,
   SLUSH_POOL = 1,
   POOL_MARS = 2,
+  DX_POOL = 3,
 }
 
 export interface Pool {
