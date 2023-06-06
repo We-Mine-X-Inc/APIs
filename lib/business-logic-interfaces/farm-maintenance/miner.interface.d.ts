@@ -20,7 +20,8 @@ export type RackLocation = {
 export declare enum MinerApiType {
     UNKNOWN = 0,
     ANTMINER = 1,
-    GOLDSHELL = 2
+    GOLDSHELL = 2,
+    BRAIINS = 3
 }
 export interface Miner {
     _id: Types.ObjectId;
