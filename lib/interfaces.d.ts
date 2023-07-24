@@ -1,4 +1,5 @@
 export * from "./business-logic-interfaces/account-mgmt";
+export * from "./business-logic-interfaces/customer-dashboard";
 export * from "./business-logic-interfaces/farm-maintenance";
 export * from "./business-logic-interfaces/farm-metrics";
 export * from "./business-logic-interfaces/market-insights";
