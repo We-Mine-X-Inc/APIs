@@ -48,6 +48,9 @@
       "@market-insights-interfaces/*": [
         "business-logic-interfaces/market-insights/*"
       ],
+      "@customer-dashboard-interfaces/*": [
+        "business-logic-interfaces/customer-dashboard/*"
+      ],
       "@data-transfer-objects/*": ["data-transfer-objects/*"],
       "@account-mgmt-dtos/*": ["data-transfer-objects/account-mgmt/*"],
       "@farm-maintenance-dtos/*": ["data-transfer-objects/farm-maintenance/*"],
