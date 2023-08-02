@@ -18,6 +18,9 @@ export class CreateCustomerRequestDto {
 
   @IsBoolean()
   public isCompanyCustomer?: boolean;
+
+  @IsBoolean()
+  public hasSubmittedSignUpInfo?: boolean;
 }
 
 export interface CreateCustomerRequest {
@@ -27,4 +30,5 @@ export interface CreateCustomerRequest {
   phoneNumber: string;
   address: string;
   isCompanyCustomer: boolean;
+  hasSubmittedSignUpInfo: boolean;
 }

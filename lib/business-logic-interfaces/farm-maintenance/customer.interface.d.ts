@@ -7,5 +7,6 @@ export interface Customer {
     phoneNumber?: string;
     address?: string;
     iscompanyCustomer: boolean;
+    hasSubmittedSignUpInfo: boolean;
 }
 //# sourceMappingURL=customer.interface.d.ts.map

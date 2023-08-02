@@ -8,4 +8,5 @@ export interface Customer {
   phoneNumber?: string;
   address?: string;
   iscompanyCustomer: boolean;
+  hasSubmittedSignUpInfo: boolean;
 }

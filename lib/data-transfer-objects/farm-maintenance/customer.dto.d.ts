@@ -5,6 +5,7 @@ export declare class CreateCustomerRequestDto {
     phoneNumber?: string;
     address?: string;
     isCompanyCustomer?: boolean;
+    hasSubmittedSignUpInfo?: boolean;
 }
 export interface CreateCustomerRequest {
     email: string;
@@ -13,5 +14,6 @@ export interface CreateCustomerRequest {
     phoneNumber: string;
     address: string;
     isCompanyCustomer: boolean;
+    hasSubmittedSignUpInfo: boolean;
 }
 //# sourceMappingURL=customer.dto.d.ts.map
