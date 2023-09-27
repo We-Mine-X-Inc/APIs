@@ -14,7 +14,7 @@ export class CreateMinerErrorRequestDto {
   public stackTrace?: string;
 }
 
-export interface CreateMinerErrorReqeust {
+export interface CreateMinerErrorRequest {
   type: MinerErrorType;
   poolSwitchErrorInfo?: PoolSwitchErrorInfo;
   stackTrace?: string;

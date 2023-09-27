@@ -4,7 +4,7 @@ export declare class CreateMinerErrorRequestDto {
     poolSwitchErrorInfo?: PoolSwitchErrorInfo;
     stackTrace?: string;
 }
-export interface CreateMinerErrorReqeust {
+export interface CreateMinerErrorRequest {
     type: MinerErrorType;
     poolSwitchErrorInfo?: PoolSwitchErrorInfo;
     stackTrace?: string;
