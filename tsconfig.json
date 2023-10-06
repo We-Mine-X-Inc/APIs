@@ -39,6 +39,7 @@
       "@account-mgmt-interfaces/*": [
         "business-logic-interfaces/account-mgmt/*"
       ],
+      "@common-interfaces/*": ["business-logic-interfaces/common/*"],
       "@farm-maintenance-interfaces/*": [
         "business-logic-interfaces/farm-maintenance/*"
       ],

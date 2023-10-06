@@ -16,6 +16,7 @@ export interface PoolSwitchErrorInfo {
 export interface MinerError {
   _id: Types.ObjectId;
   type: MinerErrorType;
-  poolSwitchErrorInfo: PoolSwitchErrorInfo;
+  environmentConfigId: Types.ObjectId;
+  poolSwitchErrorInfo?: PoolSwitchErrorInfo;
   stackTrace: string;
 }
