@@ -7,6 +7,5 @@ export * from "./business-logic-interfaces/global-configs";
 export * from "./business-logic-interfaces/market-insights";
 export * from "./data-transfer-objects/account-mgmt";
 export * from "./data-transfer-objects/farm-maintenance";
-export * from "./data-transfer-objects/farm-metrics";
 export * from "./data-transfer-objects/market-insights";
 export * from "./exceptions";
