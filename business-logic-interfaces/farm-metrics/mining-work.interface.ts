@@ -1,6 +1,7 @@
 import { Types } from "mongoose";
+import { Miner, Pool } from "../farm-maintenance";
 
-export type MiningWork = {
+export interface MiningWork {
   _id: Types.ObjectId;
   miner: Types.ObjectId;
   pool: Types.ObjectId;
@@ -8,4 +9,14 @@ export type MiningWork = {
   hashRate: Number;
   totalEnergyConsumption: Number;
   isOnline: Boolean;
-};
+}
+
+export interface MiningWorkHydrated {
+  _id: Types.ObjectId;
+  miner: Miner;
+  pool: Pool;
+  time: Date;
+  hashRate: Number;
+  totalEnergyConsumption: Number;
+  isOnline: Boolean;
+}

@@ -1,5 +1,6 @@
 import { Types } from "mongoose";
-export type MiningWork = {
+import { Miner, Pool } from "../farm-maintenance";
+export interface MiningWork {
     _id: Types.ObjectId;
     miner: Types.ObjectId;
     pool: Types.ObjectId;
@@ -7,5 +8,14 @@ export type MiningWork = {
     hashRate: Number;
     totalEnergyConsumption: Number;
     isOnline: Boolean;
-};
+}
+export interface MiningWorkHydrated {
+    _id: Types.ObjectId;
+    miner: Miner;
+    pool: Pool;
+    time: Date;
+    hashRate: Number;
+    totalEnergyConsumption: Number;
+    isOnline: Boolean;
+}
 //# sourceMappingURL=mining-work.interface.d.ts.map
