@@ -26,6 +26,7 @@ export interface Pool {
   coinType: CoinType;
   apiToken: string;
   purpose: PoolPurposeType;
+  friendlyPoolId: string;
 }
 
 export const POOL_FIELDS_TO_POPULATE = ["creator"];

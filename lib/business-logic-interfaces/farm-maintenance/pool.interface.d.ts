@@ -23,6 +23,7 @@ export interface Pool {
     coinType: CoinType;
     apiToken: string;
     purpose: PoolPurposeType;
+    friendlyPoolId: string;
 }
 export declare const POOL_FIELDS_TO_POPULATE: string[];
 //# sourceMappingURL=pool.interface.d.ts.map
