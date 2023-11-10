@@ -47,7 +47,7 @@
         "business-logic-interfaces/farm-metrics/*"
       ],
       "@market-insights-interfaces/*": [
-        "business-logic-interfaces/market-insights/*"
+        "business-logic-interfaces/market-info/*"
       ],
       "@customer-dashboard-interfaces/*": [
         "business-logic-interfaces/customer-dashboard/*"

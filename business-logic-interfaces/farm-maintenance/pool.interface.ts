@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { CoinType } from "@market-insights-interfaces/coin-market-info.interface";
+import { CoinType } from "@/business-logic-interfaces/market-info/coin-details.interface";
 import { Customer } from "./customer.interface";
 
 export enum PoolPurposeType {
