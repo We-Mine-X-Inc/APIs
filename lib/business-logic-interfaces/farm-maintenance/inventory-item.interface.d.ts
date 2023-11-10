@@ -1,5 +1,6 @@
 import { Types } from "mongoose";
 import { Miner } from "./miner.interface";
+import { MinerDetails } from "../market-info";
 export declare enum InventoryItemType {
     UNKNOWN = 0,
     MINER = 1,
@@ -31,6 +32,7 @@ export type OperationalMetadata = {
     powerSwitchMetadata?: PowerSwitchMetadata;
 };
 export type MinerOperationsMetadata = {
+    minerDetails: MinerDetails;
     hashAlgorithmType: HashAlgorithmType;
     expectedHashRateRange: NumericRange;
     expectedFanSpeedRange: NumericRange;
