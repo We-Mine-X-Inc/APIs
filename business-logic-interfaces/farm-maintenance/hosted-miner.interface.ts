@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
 import { Contract } from "./contract.interface";
 import { Customer } from "./customer.interface";
-import { InventoryItem } from "./inventory-item.interface";
+import { Miner } from "./miner.interface";
 
 export enum MinerNetworkStatus {
   UNKNOWN = 0,
@@ -32,7 +32,7 @@ export interface HostedMiner {
   _id: Types.ObjectId;
   friendlyMinerId: string;
   owner: Customer;
-  inventoryItem: InventoryItem;
+  miner: Miner;
   ipAddress: string;
   macAddress: string;
   API: MinerApiType;
@@ -41,9 +41,7 @@ export interface HostedMiner {
   activeContract: Contract;
 }
 
-// TODO: Move these to the models as opposed to the interfaces
-export const MINER_FILEDS_TO_POPULATE = [
+export const HOSTED_MINER_FILEDS_TO_POPULATE = [
   { path: "owner" },
-  { path: "inventoryItem", populate: { path: "operationalDependencies" } },
-  // { path: "activeContract" },
+  { path: "miner", populate: { path: "metadata" } },
 ];

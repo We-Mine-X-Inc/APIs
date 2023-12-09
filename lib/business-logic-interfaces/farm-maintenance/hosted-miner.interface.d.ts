@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
 import { Contract } from "./contract.interface";
 import { Customer } from "./customer.interface";
-import { InventoryItem } from "./inventory-item.interface";
+import { Miner } from "./miner.interface";
 export declare enum MinerNetworkStatus {
     UNKNOWN = 0,
     OFFLINE = 1,
@@ -27,7 +27,7 @@ export interface HostedMiner {
     _id: Types.ObjectId;
     friendlyMinerId: string;
     owner: Customer;
-    inventoryItem: InventoryItem;
+    miner: Miner;
     ipAddress: string;
     macAddress: string;
     API: MinerApiType;
@@ -35,7 +35,7 @@ export interface HostedMiner {
     rackLocation: RackLocation;
     activeContract: Contract;
 }
-export declare const MINER_FILEDS_TO_POPULATE: ({
+export declare const HOSTED_MINER_FILEDS_TO_POPULATE: ({
     path: string;
     populate?: never;
 } | {

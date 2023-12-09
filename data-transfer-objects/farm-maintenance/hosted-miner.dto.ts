@@ -1,5 +1,5 @@
 import { Customer } from "@farm-maintenance-interfaces/customer.interface";
-import { InventoryItem } from "@farm-maintenance-interfaces/inventory-item.interface";
+import { Miner } from "@/business-logic-interfaces/farm-maintenance/miner.interface";
 import {
   MinerApiType,
   MinerStatus,
@@ -14,12 +14,12 @@ import {
 } from "class-validator";
 import { Types } from "mongoose";
 
-export class CreateMinerRequestDto {
+export class CreateHostedMinerRequestDto {
   @IsObject()
   public owner?: Customer;
 
   @IsObject()
-  public inventoryItem?: InventoryItem;
+  public miner?: Miner;
 
   @IsMACAddress()
   public macAddress?: string;
@@ -39,7 +39,7 @@ export class CreateMinerRequestDto {
 
 export interface CreateMinerRequest {
   owner: Customer;
-  inventoryItem: InventoryItem;
+  miner: Miner;
   macAddress: string;
   ipAddress: string;
   API: MinerApiType;
@@ -47,9 +47,9 @@ export interface CreateMinerRequest {
   rackLocation: RackLocation;
 }
 
-export class UpdateMinerRequestDto {
+export class UpdateHostedMinerRequestDto {
   @IsObject()
-  public minerId?: Types.ObjectId;
+  public hostedMinerId?: Types.ObjectId;
 
   @IsOptional()
   @IsIP()
@@ -68,8 +68,8 @@ export class UpdateMinerRequestDto {
   public rackLocation?: RackLocation;
 }
 
-export interface UpdateMinerRequest {
-  minerId: Types.ObjectId;
+export interface UpdateHostedMinerRequest {
+  hostedMinerId: Types.ObjectId;
   ipAddress?: string;
   API?: MinerApiType;
   status?: MinerStatus;

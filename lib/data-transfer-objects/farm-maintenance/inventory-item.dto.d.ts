@@ -1,4 +1,4 @@
-import { InventoryItemStatus, InventoryItemType, OperationalMetadata } from "../../business-logic-interfaces/farm-maintenance/inventory-item.interface";
+import { InventoryItemStatus, InventoryItemType, OperationalMetadata } from "../../business-logic-interfaces/farm-maintenance/miner.interface";
 import { Types } from "mongoose";
 export declare class CreateInventoryItemRequestDto {
     type?: InventoryItemType;
