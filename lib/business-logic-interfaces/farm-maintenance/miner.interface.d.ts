@@ -21,7 +21,7 @@ export interface Miner {
     _id: Types.ObjectId;
     status: InventoryItemStatus;
     model: string;
-    minerDetails: MinerDetails;
+    details: MinerDetails;
     metadata: MinerOperationsMetadata;
 }
 export declare const MINER_FIELDS_TO_POPULATE: {

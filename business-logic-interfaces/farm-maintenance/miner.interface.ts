@@ -25,7 +25,7 @@ export interface Miner {
   _id: Types.ObjectId;
   status: InventoryItemStatus;
   model: string;
-  minerDetails: MinerDetails;
+  details: MinerDetails;
   metadata: MinerOperationsMetadata;
 }
 
