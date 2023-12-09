@@ -37,7 +37,7 @@
       "@/*": ["*"],
       "@business-logic-interfaces/*": ["business-logic-interfaces/*"],
       "@account-mgmt-interfaces/*": [
-        "business-logic-interfaces/account-mgmt/*"
+        "business-logic-interfaces/operations-dashboard/*"
       ],
       "@common-interfaces/*": ["business-logic-interfaces/common/*"],
       "@farm-maintenance-interfaces/*": [
@@ -53,7 +53,7 @@
         "business-logic-interfaces/customer-dashboard/*"
       ],
       "@data-transfer-objects/*": ["data-transfer-objects/*"],
-      "@account-mgmt-dtos/*": ["data-transfer-objects/account-mgmt/*"],
+      "@account-mgmt-dtos/*": ["data-transfer-objects/operations-dashboard/*"],
       "@farm-maintenance-dtos/*": ["data-transfer-objects/farm-maintenance/*"],
       "@farm-metrics-dtos/*": ["data-transfer-objects/farm-metrics/*"],
       "@market-insights-dtos/*": ["data-transfer-objects/market-insights/*"]

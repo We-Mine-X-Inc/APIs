@@ -4,14 +4,10 @@ import {
   ResaleContract,
 } from "@farm-maintenance-interfaces/contract.interface";
 import { Customer } from "@farm-maintenance-interfaces/customer.interface";
-import { Miner } from "@farm-maintenance-interfaces/miner.interface";
 import { IsObject, IsOptional, ValidateIf } from "class-validator";
 import { Types } from "mongoose";
 
 export class CreateContractRequestDto {
-  @IsObject()
-  public miner?: Miner;
-
   @IsObject()
   public customer?: Customer;
 
@@ -29,7 +25,6 @@ export class CreateContractRequestDto {
 }
 
 export interface CreateContractRequest {
-  miner: Miner;
   customer: Customer;
   hostingContract?: HostingContract;
   resaleContract?: ResaleContract;

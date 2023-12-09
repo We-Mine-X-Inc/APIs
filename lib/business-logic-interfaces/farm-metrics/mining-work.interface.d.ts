@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { Miner, Pool } from "../farm-maintenance";
+import { HostedMiner, Pool } from "../farm-maintenance";
 export interface MiningWork {
     _id: Types.ObjectId;
     minerByFriendlyId: Types.ObjectId;
@@ -11,7 +11,7 @@ export interface MiningWork {
 }
 export interface MiningWorkHydrated {
     _id: Types.ObjectId;
-    minerByFriendlyId: Miner;
+    minerByFriendlyId: HostedMiner;
     poolByFriendlyId: Pool;
     time: Date;
     hashRate: Number;

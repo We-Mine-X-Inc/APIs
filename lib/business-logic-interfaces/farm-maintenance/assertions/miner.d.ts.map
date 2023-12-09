@@ -1,1 +1,1 @@
-{"version":3,"file":"miner.d.ts","sourceRoot":"","sources":["../../../../business-logic-interfaces/farm-maintenance/assertions/miner.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAE3C,wBAAgB,WAAW,CAAC,KAAK,EAAE,KAAK,GAAG,OAAO,CAAC,KAAK,IAAI,KAAK,CAEhE"}
+{"version":3,"file":"miner.d.ts","sourceRoot":"","sources":["../../../../business-logic-interfaces/farm-maintenance/assertions/miner.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,2BAA2B,CAAC;AAElD,wBAAgB,WAAW,CAAC,KAAK,EAAE,KAAK,GAAG,OAAO,CAAC,KAAK,IAAI,KAAK,CAEhE"}

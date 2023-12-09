@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 import { CoinDetails } from "@/business-logic-interfaces/market-info/coin-details.interface";
 import { Customer } from "./customer.interface";
 import { MinerDetails } from "@/business-logic-interfaces/market-info/miner-details.interface";
-import { Miner } from "./miner.interface";
+import { HostedMiner } from "./hosted-miner.interface";
 import { Pool } from "./pool.interface";
 
 export enum MinerHostingConfigurationStage {
@@ -46,10 +46,13 @@ export enum ContractStage {
 }
 
 export type HostingContract = {
+  miner: HostedMiner;
   hostingStage: MinerHostingConfigurationStage;
   contractDuration: ContractDuration;
   finalCompanyPool: Pool;
   poolMiningOptions: Types.Array<PoolMiningOption>;
+  /* String is JSON.stringify of PoolMiningOptions */
+  historicalPoolMiningOptions: Types.Array<string>;
 };
 
 export type ResaleContract = {
@@ -79,7 +82,6 @@ export interface Contract {
   _id: Types.ObjectId;
   previousContract: Contract;
   customer: Customer;
-  miner: Miner;
   contractStage: ContractStage;
   minerIntakeStage: MinerIntakeStage;
   hostingContract?: HostingContract;

@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { Miner } from "./miner.interface";
+import { HostedMiner } from "./hosted-miner.interface";
 import { MinerDetails } from "../market-info";
 
 export enum InventoryItemType {
@@ -48,10 +48,11 @@ export type MinerOperationsMetadata = {
 
 export type PowerSwitchMetadata = {
   clientDeviceName: string;
+  ipAddress: string;
 };
 
 export type ConcreteItem = {
-  miner?: Miner;
+  miner?: HostedMiner;
 };
 
 export interface InventoryItem {
@@ -60,7 +61,6 @@ export interface InventoryItem {
   status: InventoryItemStatus;
   model: string;
   concreteItem?: ConcreteItem;
-  operationalDependencies: [InventoryItem];
   operationalMetadata: OperationalMetadata;
 }
 
