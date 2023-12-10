@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 import { InventoryItemStatus } from "./inventory-item";
 
 export type PowerControllerMetadata = {
-  clientDeviceName: string;
+  friendlyMinerId: string;
   ipAddress: string;
 };
 
