@@ -1,5 +1,5 @@
 export * from "./assertions";
-export * from "./contract.interface";
+export * from "./hosting-contract.interface";
 export * from "./customer.interface";
 export * from "./facility-info.interface";
 export * from "./hosted-miner.interface";

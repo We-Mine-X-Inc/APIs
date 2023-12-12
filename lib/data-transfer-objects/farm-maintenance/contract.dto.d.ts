@@ -1,28 +1,20 @@
-import { HostingContract, PoolActivity, ResaleContract } from "../../business-logic-interfaces/farm-maintenance/contract.interface";
+import { PoolActivity } from "../../business-logic-interfaces/farm-maintenance/hosting-contract.interface";
 import { Customer } from "../../business-logic-interfaces/farm-maintenance/customer.interface";
 import { Types } from "mongoose";
-export declare class CreateContractRequestDto {
+export declare class CreateHostingContractRequestDto {
     customer?: Customer;
-    hostingContract?: HostingContract;
-    resaleContract?: ResaleContract;
     poolActivity?: PoolActivity;
 }
-export interface CreateContractRequest {
+export interface CreateHostingContractRequest {
     customer: Customer;
-    hostingContract?: HostingContract;
-    resaleContract?: ResaleContract;
     poolActivity?: PoolActivity;
 }
-export declare class UpdateContractRequestDto {
+export declare class UpdateHostingContractRequestDto {
     contractId?: Types.ObjectId;
-    hostingContract?: HostingContract;
-    resaleContract?: ResaleContract;
     poolActivity?: PoolActivity;
 }
-export interface UpdateContractRequest {
+export interface UpdateHostingContractRequest {
     contractId: Types.ObjectId;
-    hostingContract?: HostingContract;
-    resaleContract?: ResaleContract;
     poolActivity?: PoolActivity;
 }
 //# sourceMappingURL=contract.dto.d.ts.map

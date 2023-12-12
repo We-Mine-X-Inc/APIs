@@ -13,13 +13,6 @@ export enum MinerHostingConfigurationStage {
   SUCCESSFULLY_HOSTING = 4,
 }
 
-export enum MinerResaleStage {
-  UNKNOWN = 0,
-  MINER_SENT_TO_CUSTOMER = 1,
-  SHIPMENT_TRACKING_INFO_SENT = 2,
-  MINER_RECEIVED_BY_CUSTOMER = 3,
-}
-
 export enum MinerIntakeStage {
   UNKNOWN = 0,
   OWNER_CONTACT_INFO_GATHERED = 1,
@@ -45,20 +38,6 @@ export enum ContractStage {
   COMPANY_ONLY = 4,
 }
 
-export type HostingContract = {
-  hostedMiner: HostedMiner;
-  hostingStage: MinerHostingConfigurationStage;
-  contractDuration: ContractDuration;
-  finalCompanyPool: Pool;
-  poolMiningOptions: Types.Array<PoolMiningOption>;
-  /* String is JSON.stringify of PoolMiningOptions */
-  historicalPoolMiningOptions: Types.Array<string>;
-};
-
-export type ResaleContract = {
-  resaleStage: MinerResaleStage;
-};
-
 export type ContractDuration = {
   startDateInMillis: number;
   endDateInMillis: number;
@@ -78,16 +57,21 @@ export type PoolActivity = {
   expectedActivePoolIndex: number;
 };
 
-export interface Contract {
+export interface HostingContract {
   _id: Types.ObjectId;
-  previousContract: Contract;
+  previousContract: HostingContract;
   customer: Customer;
   contractStage: ContractStage;
   minerIntakeStage: MinerIntakeStage;
-  hostingContract?: HostingContract;
-  resaleContract?: ResaleContract;
-  marketInfoAtRatification: MarketInfo;
+  hostedMiner: HostedMiner;
+  hostingStage: MinerHostingConfigurationStage;
+  contractDuration: ContractDuration;
+  finalCompanyPool: Pool;
+  poolMiningOptions: Types.Array<PoolMiningOption>;
+  /* String is JSON.stringify of PoolMiningOptions */
+  historicalPoolMiningOptions: Types.Array<string>;
   poolActivity: PoolActivity;
+  marketInfoAtRatification: MarketInfo;
 }
 
 export const CONTRACT_FIELDS_TO_POPULATE = [

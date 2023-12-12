@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { Contract } from "./contract.interface";
+import { HostingContract } from "./hosting-contract.interface";
 import { Customer } from "./customer.interface";
 import { Miner } from "./miner.interface";
 export declare enum MinerNetworkStatus {
@@ -33,7 +33,7 @@ export interface HostedMiner {
     API: MinerApiType;
     status: MinerStatus;
     rackLocation: RackLocation;
-    activeContract: Contract;
+    contract: HostingContract;
 }
 export declare const HOSTED_MINER_FILEDS_TO_POPULATE: ({
     path: string;
