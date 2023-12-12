@@ -46,7 +46,7 @@ export enum ContractStage {
 }
 
 export type HostingContract = {
-  miner: HostedMiner;
+  hostedMiner: HostedMiner;
   hostingStage: MinerHostingConfigurationStage;
   contractDuration: ContractDuration;
   finalCompanyPool: Pool;
