@@ -4,7 +4,8 @@ export declare enum MinerErrorType {
     HASH_RATE_ERROR = 1,
     POOL_SWITCH_ERROR = 2,
     TEMPERATURE_ERROR = 3,
-    FAN_SPEED_ERROR = 4
+    FAN_SPEED_ERROR = 4,
+    POOL_STATUS_ERROR = 5
 }
 export interface PoolSwitchErrorInfo {
     minerId: Types.ObjectId;
