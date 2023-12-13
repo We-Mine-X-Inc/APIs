@@ -2,8 +2,9 @@ import { Types } from "mongoose";
 export declare enum MinerErrorType {
     UNKNOWN_MINER_ERROR_TYPE = 0,
     HASH_RATE_ERROR = 1,
-    POOL_SWITCH = 2,
-    TEMPERATURE = 3
+    POOL_SWITCH_ERROR = 2,
+    TEMPERATURE_ERROR = 3,
+    FAN_SPEED_ERROR = 4
 }
 export interface PoolSwitchErrorInfo {
     minerId: Types.ObjectId;
