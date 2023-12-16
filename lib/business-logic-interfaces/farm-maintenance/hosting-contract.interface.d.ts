@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
-import { CoinDetails } from "../../business-logic-interfaces/market-info/coin-details.interface";
+import { CoinMarketDetails } from "../../business-logic-interfaces/market-info/coin-market-details.interface";
 import { Customer } from "./customer.interface";
-import { MinerDetails } from "../../business-logic-interfaces/market-info/miner-details.interface";
+import { MinerMarketDetails } from "../../business-logic-interfaces/market-info/miner-market-details.interface";
 import { HostedMiner } from "./hosted-miner.interface";
 import { Pool } from "./pool.interface";
 export declare enum MinerHostingConfigurationStage {
@@ -43,8 +43,8 @@ export type PoolMiningOption = {
     miningDurationInMillis: number;
 };
 export type MarketInfo = {
-    coinMarketInfo: CoinDetails;
-    minerMarketInfo: MinerDetails;
+    coinMarketInfo: CoinMarketDetails;
+    minerMarketInfo: MinerMarketDetails;
 };
 export type PoolActivity = {
     expectedActivePoolIndex: number;

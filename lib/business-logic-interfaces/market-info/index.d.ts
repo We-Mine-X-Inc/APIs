@@ -1,3 +1,3 @@
-export * from "./coin-details.interface";
-export * from "./miner-details.interface";
+export * from "./coin-market-details.interface";
+export * from "./miner-market-details.interface";
 //# sourceMappingURL=index.d.ts.map

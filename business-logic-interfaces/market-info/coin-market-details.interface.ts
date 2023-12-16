@@ -6,7 +6,7 @@ export enum CoinType {
   BTC = 2,
 }
 
-export type CoinDetails = {
+export type CoinMarketDetails = {
   _id: Types.ObjectId;
   coinType: CoinType;
   symbol: String;

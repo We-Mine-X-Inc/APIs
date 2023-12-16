@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { MinerDetails } from "../market-info";
+import { MinerMarketDetails } from "../market-info";
 import { InventoryItemStatus } from "./inventory-item";
 export declare enum HashAlgorithmType {
     UNKNOWN = 0,
@@ -10,7 +10,7 @@ export type NumericRange = {
     minimum: number;
     maximum: number;
 };
-export type MinerOperationsMetadata = {
+export type MinerOperationDetails = {
     hashAlgorithmType: HashAlgorithmType;
     expectedHashRateRange: NumericRange;
     expectedFanSpeedRange: NumericRange;
@@ -21,8 +21,8 @@ export interface Miner {
     _id: Types.ObjectId;
     status: InventoryItemStatus;
     model: string;
-    details: MinerDetails;
-    metadata: MinerOperationsMetadata;
+    marketDetails: MinerMarketDetails;
+    operationDetails: MinerOperationDetails;
 }
 export declare const MINER_FIELDS_TO_POPULATE: {
     path: string;
