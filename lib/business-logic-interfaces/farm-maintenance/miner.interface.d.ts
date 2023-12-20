@@ -1,5 +1,4 @@
 import { Types } from "mongoose";
-import { MinerMarketDetails } from "../market-info";
 import { InventoryItemStatus } from "./inventory-item";
 export declare enum HashAlgorithmType {
     UNKNOWN = 0,
@@ -21,7 +20,7 @@ export interface Miner {
     _id: Types.ObjectId;
     status: InventoryItemStatus;
     model: string;
-    marketDetails: MinerMarketDetails;
+    marketDetails: Types.ObjectId;
     operationDetails: MinerOperationDetails;
 }
 export declare const MINER_FIELDS_TO_POPULATE: {
