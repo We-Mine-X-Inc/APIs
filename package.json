@@ -5,6 +5,7 @@
   "main": "lib/interfaces.js",
   "types": "lib/interfaces.d.ts",
   "files": [
+    "lib",
     "lib/**/*"
   ],
   "scripts": {
