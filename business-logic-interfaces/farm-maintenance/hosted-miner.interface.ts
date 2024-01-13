@@ -13,6 +13,7 @@ export type MinerStatus = {
   lastOnlineDateInMillis: number;
   networkStatus: MinerNetworkStatus;
   poolIsBeingSwitched: boolean;
+  isFarmManaged: boolean;
 };
 
 export type RackLocation = {
