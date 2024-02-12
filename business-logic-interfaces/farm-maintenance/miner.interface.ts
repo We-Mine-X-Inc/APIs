@@ -1,5 +1,6 @@
 import { Types } from "mongoose";
 import { InventoryItemStatus } from "./inventory-item";
+import { MinerMarketDetails } from "../market-info";
 
 export enum HashAlgorithmType {
   UNKNOWN = 0,
@@ -25,6 +26,14 @@ export interface Miner {
   status: InventoryItemStatus;
   model: string;
   marketDetails: Types.ObjectId;
+  operationDetails: MinerOperationDetails;
+}
+
+export interface MinerInflated {
+  _id: Types.ObjectId;
+  status: InventoryItemStatus;
+  model: string;
+  marketDetails: MinerMarketDetails;
   operationDetails: MinerOperationDetails;
 }
 
