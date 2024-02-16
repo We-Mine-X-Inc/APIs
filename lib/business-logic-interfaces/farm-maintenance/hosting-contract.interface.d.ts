@@ -1,4 +1,4 @@
-import { Types } from "mongoose";
+import { ObjectId, Types } from "mongoose";
 import { CoinMarketDetails } from "../../business-logic-interfaces/market-info/coin-market-details.interface";
 import { Customer } from "./customer.interface";
 import { MinerMarketDetails } from "../../business-logic-interfaces/market-info/miner-market-details.interface";
@@ -39,7 +39,7 @@ export type ContractDuration = {
     endDateInMillis: number;
 };
 export type PoolMiningOption = {
-    pool: Pool;
+    poolId: ObjectId;
     miningDurationInMillis: number;
 };
 export type MarketInfo = {
