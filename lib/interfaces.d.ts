@@ -5,6 +5,7 @@ export * from "./business-logic-interfaces/farm-maintenance";
 export * from "./business-logic-interfaces/farm-metrics";
 export * from "./business-logic-interfaces/global-configs";
 export * from "./business-logic-interfaces/market-info";
+export * from "./data-transfer-objects/id";
 export * from "./data-transfer-objects/operations-dashboard";
 export * from "./data-transfer-objects/farm-maintenance";
 export * from "./exceptions";
