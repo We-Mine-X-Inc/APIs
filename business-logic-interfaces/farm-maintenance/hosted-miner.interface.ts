@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
 import { HostingContract } from "./hosting-contract.interface";
 import { Customer } from "./customer.interface";
-import { Miner } from "./miner.interface";
+import { Miner, MinerInflated } from "./miner.interface";
 
 export enum MinerNetworkStatus {
   UNKNOWN = 0,
@@ -34,6 +34,19 @@ export interface HostedMiner {
   friendlyMinerId: string;
   owner: Customer;
   miner: Miner;
+  ipAddress: string;
+  macAddress: string;
+  API: MinerApiType;
+  status: MinerStatus;
+  rackLocation: RackLocation;
+  contract: HostingContract;
+}
+
+export interface HostedMinerInflated {
+  _id: Types.ObjectId;
+  friendlyMinerId: string;
+  owner: Customer;
+  miner: MinerInflated;
   ipAddress: string;
   macAddress: string;
   API: MinerApiType;
