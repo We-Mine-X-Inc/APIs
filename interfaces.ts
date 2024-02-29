@@ -1,6 +1,7 @@
 export * from "./business-logic-interfaces/operations-dashboard";
 export * from "./business-logic-interfaces/common";
 export * from "./business-logic-interfaces/customer-dashboard";
+export * from "./business-logic-interfaces/domain";
 export * from "./business-logic-interfaces/farm-maintenance";
 export * from "./business-logic-interfaces/farm-metrics";
 export * from "./business-logic-interfaces/global-configs";

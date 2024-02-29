@@ -1,4 +1,5 @@
 import { Types } from "mongoose";
+import { WalletPreference } from "../domain/wallet.interface";
 
 export type MinerStatusChangeNotifPreference = {
   shouldReceiveEmail: boolean;
@@ -28,4 +29,5 @@ export interface Customer {
   iscompanyCustomer: boolean;
   hasSubmittedSignUpInfo: boolean;
   notificationPreferences: NotificationPreferences;
+  walletPreferences: WalletPreference[];
 }
