@@ -1,8 +1,9 @@
 import { Types } from "mongoose";
 import { InventoryItemStatus } from "./inventory-item";
 
-export type PowerControllerMetadata = {
+export type ManagementMetadata = {
   friendlyMinerId: string;
+  friendlyPowerControllerId: string;
   ipAddress: string;
 };
 
@@ -10,7 +11,7 @@ export interface PowerController {
   _id: Types.ObjectId;
   status: InventoryItemStatus;
   model: string;
-  metadata: PowerControllerMetadata;
+  managementMetadata: ManagementMetadata;
 }
 
 export const POWER_CONTROLLER_FIELDS_TO_POPULATE = [
