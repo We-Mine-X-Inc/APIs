@@ -8,7 +8,7 @@ export declare enum MinerNetworkStatus {
     ONLINE = 2
 }
 export type MinerStatus = {
-    lastOnlineDateInMillis: number;
+    lastOnlineDate: Date;
     networkStatus: MinerNetworkStatus;
     poolIsBeingSwitched: boolean;
     isFarmManaged: boolean;
