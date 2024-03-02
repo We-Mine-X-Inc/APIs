@@ -28,6 +28,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "bson-objectid": "^2.0.4",
     "class-validator": "^0.14.0",
     "mongoose": "^7.0.5"
   }

@@ -1,4 +1,4 @@
-import { ObjectId } from "bson";
+import ObjectID from "bson-objectid";
 import { Types } from "mongoose";
-export type TransferableObjectId = ObjectId | Types.ObjectId;
+export type TransferableObjectId = ObjectID | Types.ObjectId;
 //# sourceMappingURL=index.d.ts.map
