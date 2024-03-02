@@ -2,6 +2,7 @@ import { Types } from "mongoose";
 import { HostingContract } from "./hosting-contract.interface";
 import { Customer } from "./customer.interface";
 import { Miner, MinerInflated } from "./miner.interface";
+import { PowerController } from "./power-controller.interface";
 export declare enum MinerNetworkStatus {
     UNKNOWN = 0,
     OFFLINE = 1,
@@ -35,6 +36,7 @@ export interface HostedMiner {
     status: MinerStatus;
     rackLocation: RackLocation;
     contract: HostingContract;
+    powerController: PowerController;
 }
 export interface HostedMinerInflated {
     _id: Types.ObjectId;
@@ -47,6 +49,7 @@ export interface HostedMinerInflated {
     status: MinerStatus;
     rackLocation: RackLocation;
     contract: HostingContract;
+    powerController: PowerController;
 }
 export declare const HOSTED_MINER_FILEDS_TO_POPULATE: ({
     path: string;
