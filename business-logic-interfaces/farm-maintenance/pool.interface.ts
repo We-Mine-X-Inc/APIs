@@ -14,6 +14,7 @@ export enum PoolType {
   SLUSH_POOL = 1,
   POOL_MARS = 2,
   DX_POOL = 3,
+  ANT_POOL = 4,
 }
 
 export interface Pool {
