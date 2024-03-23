@@ -3,6 +3,7 @@ import { HostingContract } from "./hosting-contract.interface";
 import { Customer } from "./customer.interface";
 import { Miner, MinerInflated } from "./miner.interface";
 import { PowerController } from "./power-controller.interface";
+import { MinerErrorType } from "./miner-error.interface";
 export declare enum MinerNetworkStatus {
     UNKNOWN = 0,
     OFFLINE = 1,
@@ -13,6 +14,7 @@ export type MinerStatus = {
     networkStatus: MinerNetworkStatus;
     poolIsBeingSwitched: boolean;
     isFarmManaged: boolean;
+    operatingError: MinerErrorType;
 };
 export type RackLocation = {
     facility: Types.ObjectId;
