@@ -7,6 +7,7 @@ export enum MinerErrorType {
   TEMPERATURE_ERROR = 3,
   FAN_SPEED_ERROR = 4,
   POOL_STATUS_ERROR = 5,
+  OFFLINE_ERROR = 6,
 }
 
 export interface PoolSwitchErrorInfo {
