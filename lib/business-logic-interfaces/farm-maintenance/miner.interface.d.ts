@@ -24,7 +24,7 @@ export interface Miner {
     marketDetails: Types.ObjectId;
     operationDetails: MinerOperationDetails;
 }
-export interface MinerInflated {
+export interface MinerHydrated {
     _id: Types.ObjectId;
     status: InventoryItemStatus;
     model: string;
