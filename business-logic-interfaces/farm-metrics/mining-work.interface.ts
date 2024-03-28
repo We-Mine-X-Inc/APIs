@@ -8,7 +8,7 @@ export interface MiningWork {
   time: Date;
   hashRate: Number;
   totalEnergyConsumption: Number;
-  isOnline: Boolean;
+  isOperational: Boolean;
 }
 
 export interface MiningWorkHydrated {
@@ -18,5 +18,5 @@ export interface MiningWorkHydrated {
   time: Date;
   hashRate: Number;
   totalEnergyConsumption: Number;
-  isOnline: Boolean;
+  isOperational: Boolean;
 }

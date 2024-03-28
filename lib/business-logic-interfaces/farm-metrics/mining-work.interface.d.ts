@@ -7,7 +7,7 @@ export interface MiningWork {
     time: Date;
     hashRate: Number;
     totalEnergyConsumption: Number;
-    isOnline: Boolean;
+    isOperational: Boolean;
 }
 export interface MiningWorkHydrated {
     _id: Types.ObjectId;
@@ -16,6 +16,6 @@ export interface MiningWorkHydrated {
     time: Date;
     hashRate: Number;
     totalEnergyConsumption: Number;
-    isOnline: Boolean;
+    isOperational: Boolean;
 }
 //# sourceMappingURL=mining-work.interface.d.ts.map
