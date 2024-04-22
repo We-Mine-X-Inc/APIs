@@ -8,5 +8,10 @@ export type FacilityInfo = {
     estPowerCostInMicros: number;
     farenheitTemp: number;
     isAutoManaged: boolean;
+    underMaintenanceConfig: MaintenanceConfig;
+};
+export type MaintenanceConfig = {
+    reminderFreqToReinitAutoMgmt: number;
+    maxEndTimeForMaintenance: Date;
 };
 //# sourceMappingURL=facility-info.interface.d.ts.map
