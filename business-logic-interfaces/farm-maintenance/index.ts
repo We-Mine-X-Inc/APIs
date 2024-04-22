@@ -2,6 +2,7 @@ export * from "./assertions";
 export * from "./hosting-contract.interface";
 export * from "./customer.interface";
 export * from "./facility-info.interface";
+export * from "./facility-maintenance-job.interface";
 export * from "./hosted-miner.interface";
 export * from "./inventory-item";
 export * from "./miner.interface";
