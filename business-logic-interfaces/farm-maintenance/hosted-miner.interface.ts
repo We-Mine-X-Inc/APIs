@@ -17,6 +17,7 @@ export type MinerStatus = {
   poolIsBeingSwitched: boolean;
   isFarmManaged: boolean;
   operatingError: MinerErrorType;
+  operatingErrors: MinerErrorType[];
 };
 
 export type RackLocation = {
