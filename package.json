@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/We-Mine-X-Inc/APIs#readme",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "tsc-alias": "^1.8.5",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
@@ -30,6 +31,6 @@
   "dependencies": {
     "bson-objectid": "^2.0.4",
     "class-validator": "^0.14.0",
-    "mongoose": "^7.0.5"
+    "mongoose": "^8.4.0"
   }
 }
