@@ -8,6 +8,6 @@ export interface Customer {
   lastName: string;
   phoneNumber?: string;
   address?: string;
-  iscompanyCustomer: boolean;
+  isCompanyCustomer: boolean;
   walletPreferences: WalletPreference[];
 }
